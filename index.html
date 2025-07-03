@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howard Ji</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .project {
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .project-meta {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .project-description {
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Howard Ji</h1>
+    
+    <div class="contact">
+        <p>howardji at stanford dot edu | Stanford, CA</p>
+    </div>
+
+    <div class="section">
+        <h2>About</h2>
+        <p>
+            Hi, I'm Howard! I'm a student at Stanford University studying robotics and artificial intelligence.
+        </p>
+        <p>
+            I'm passionate about developing intelligent robotic systems that can meaningfully interact with and assist humans. My research spans robot learning, computer vision, and medical imaging applications.
+        </p>
+        <p>
+            Currently, I'm working on collaborative human-robot manipulation at the <a href="#">CHARM Lab</a> and robot learning policy visualization at the <a href="#">Stanford Vision and Learning Lab</a>.
+        </p>
+        <p>
+            In the past, I've developed a column-climbing robot for infrastructure inspection that earned me recognition as a <em>2024 Regeneron Science Talent Search Finalist</em>. I've also published research on biological oscillator modeling in the PUMP Journal.
+        </p>
+        <p>
+            In my free time, I enjoy building hardware projects, participating in the Stanford Space Initiative, and exploring new applications of machine learning in robotics.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Research</h2>
+        
+        <div class="project">
+            <div class="project-title"><a href="./projects/davinci-robot.html">DaVinci Surgical Three-Hand Robot Learning</a></div>
+            <div class="project-meta">CHARM Lab, Stanford (June 2025 - Present)</div>
+            <div class="project-description">
+                Developing policy using Action Chunking Transformers (ACT) for collaborative human-robot manipulation tasks in surgical robotics applications.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="./projects/robot-visualization.html">Robot Learning Policy Visualization</a></div>
+            <div class="project-meta">SVL Lab, Stanford (June 2025 - Present)</div>
+            <div class="project-description">
+                Creating visualization frameworks that intertwine point clouds and 3D depth information from monocular vision to enhance interpretability of robot learning policies.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="./projects/bridge-robot.html">Column-climbing Robot for Real-time Bridge Inspection</a></div>
+            <div class="project-meta">Independent Project (February 2022 - May 2023)</div>
+            <div class="project-description">
+                Developed an autonomous multi-robot system capable of climbing columns and mapping surface cracks in real-time. Achieved 82.6% mean average precision while climbing at 4.7 cm/s on real bridges.
+                <div class="highlight">Published at IEEE GlobConET Conference • 2024 Regeneron Science Talent Search Finalist</div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="./projects/biological-oscillator.html">Stochastic and Deterministic Models of Biological Oscillators</a></div>
+            <div class="project-meta">Read Lab, UC Irvine (June 2022 - August 2023)</div>
+            <div class="project-description">
+                Compared computational models of oscillatory genetic circuits involving repressor proteins using periodograms, heat maps, and peak-finding techniques.
+                <div class="highlight">First-author publication in PUMP Journal</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <div class="project-title"><a href="./projects/hand-manipulation.html">Robust Vision-Based 3D Hand-Object Manipulation Understanding</a></div>
+            <div class="project-meta">CS231n Deep Learning for Computer Vision, Stanford (Spring 2025)</div>
+            <div class="project-description">
+                Developed and trained a 400M+ parameter transformer model to convert monocular human video to 3D MANO hand poses, achieving 150 MPJPE accuracy.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="./projects/pet-imaging.html">Single Source Calibration for Simultaneous PET Imaging</a></div>
+            <div class="project-meta">MIIL Lab, Stanford (Spring 2025)</div>
+            <div class="project-description">
+                Modeled Monte Carlo simulations in GATE for normalization of ringed PET devices using single line source calibration methods.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="./projects/ferrobots.html">Ferrobots Medical Testing Platform</a></div>
+            <div class="project-meta">I2BL Lab, UCLA (Summer 2023)</div>
+            <div class="project-description">
+                Designed simulation and control software for Ferrobots - miniature grid robots for automated liquid transport in medical testing applications.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p>
+            <strong>Stanford University</strong> (2024 - Present)<br>
+            Bachelor's Degree, GPA: 3.91<br>
+            Relevant Coursework: CS 231n (Deep Learning for Computer Vision)<br>
+            Activities: Stanford Space Initiative (Mars Rover Team - Software & Hardware Control)
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <p>
+            <strong>Programming:</strong> Python, C++, Java, MATLAB<br>
+            <strong>Libraries & Frameworks:</strong> PyTorch, TensorFlow, SciPy, NumPy, BioNetGen<br>
+            <strong>Hardware:</strong> Arduino, Raspberry Pi, CAD (Fusion 360)<br>
+            <strong>Tools:</strong> Git, Weights & Biases, GATE, ROS
+        </p>
+    </div>
+</body>
+</html>

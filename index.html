@@ -124,7 +124,7 @@
             I'm passionate about developing intelligent robotic systems that can meaningfully interact with and assist humans. My research spans robot learning, computer vision, and medical imaging applications.
         </p>
         <p>
-            Currently, I'm working on a generative robot learning policy at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>. Previously, I worked on collaborative human-robot manipulation at the <a href="https://charm.stanford.edu/Main/HomePage">CHARM Lab</a>.
+            Currently, I'm working on physics-aware video generation for robotics at the <a href="https://geometry.stanford.edu/">Stanford Geometric Computation Group</a> (Guibas Lab). Previously, I worked on a generative robot learning policy at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>, and on collaborative human-robot manipulation at the <a href="https://charm.stanford.edu/Main/HomePage">CHARM Lab</a>.
         </p>
         <p>
             In the past, I've developed a column-climbing robot for infrastructure inspection that earned me recognition as a <em>2024 Regeneron Science Talent Search Finalist</em>.
@@ -138,10 +138,19 @@
         <h2>Research</h2>
 
         <div class="project">
-            <div class="project-title">Generative Robot Learning Model</div>
-            <div class="project-meta">Stanford Vision and Learning Lab (Prof. Jiajun Wu, Dr. Huang Huang, Yunzhi Zhang), Stanford (June 2025 - Present)</div>
+            <div class="project-title">Physics-Aware Video Generation for Robotics</div>
+            <div class="project-meta">Stanford Geometric Computation Group (Prof. Leonidas Guibas, Yang Zheng, Baoyang Deng), Stanford (June 2026 - Present)</div>
             <div class="project-description">
-                Designed and implemented a predictive robot action model using vision-language models (VLMs), combining generative flow tracking, video-based representation learning, and action reward. Trained and deployed models in simulation and on a physical Franka R3 arm to demonstrate sim-to-real transfer.
+                Designing a physics-aware video generation framework for robotics that jointly predicts RGB frames and physical states, drawing on video diffusion, world models, and inverse-dynamics.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks</div>
+            <div class="project-meta">Stanford Vision and Learning Lab (Prof. Jiajun Wu, Dr. Raven Huang, Yunzhi Zhang), Stanford (June 2025 - June 2026)</div>
+            <div class="project-description">
+                Built TrAct, a robot decision framework that uses visual tracks to link a VLA policy, a track-conditioned video diffusion world model, and a VLM reward model. Improved task success from 27% to 55% in simulation and 49% to 76% on a real Franka arm, and demonstrated sim-to-real transfer and cross-embodiment generalization (Franka → UR5).
+                <div class="highlight">Co-first author, submitted to CoRL</div>
             </div>
         </div>
 

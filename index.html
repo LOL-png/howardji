@@ -124,7 +124,7 @@
             I'm passionate about developing intelligent robotic systems that can meaningfully interact with and assist humans. My research spans robot learning, computer vision, and medical imaging applications.
         </p>
         <p>
-            Currently, I'm working on physics-aware video generation for robotics at the <a href="https://geometry.stanford.edu/">Stanford Geometric Computation Group</a> (Guibas Lab). Previously, I worked on a generative robot learning policy at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>, and on collaborative human-robot manipulation at the <a href="https://charm.stanford.edu/Main/HomePage">CHARM Lab</a>.
+            Currently, I'm working on world-action models and physics-aware video generation for robotics at the <a href="https://geometry.stanford.edu/">Stanford Geometric Computation Group</a> (Guibas Lab), and on TrAct, a track-based robot decision framework, at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab</a>. Previously, I worked on collaborative human-robot manipulation at the <a href="https://charm.stanford.edu/Main/HomePage">CHARM Lab</a>.
         </p>
         <p>
             In the past, I've developed a column-climbing robot for infrastructure inspection that earned me recognition as a <em>2024 Regeneron Science Talent Search Finalist</em>.
@@ -141,21 +141,30 @@
             <div class="project-title">Physics-Aware Video Generation for Robotics</div>
             <div class="project-meta">Stanford Geometric Computation Group (Prof. Leonidas Guibas, Yang Zheng, Baoyang Deng), Stanford (June 2026 - Present)</div>
             <div class="project-description">
-                Designing a physics-aware video generation framework for robotics that jointly predicts RGB frames and physical states, drawing on video diffusion, world models, and inverse-dynamics.
+                Designing a two-expert diffusion architecture that jointly generates video and 3D point clouds for robot world models, drawing on video diffusion, world models, and inverse-dynamics.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">JAM: Effective Coupling of World and Action in World-Action Model Pretraining</div>
+            <div class="project-meta">Stanford Geometric Computation Group (Prof. Leonidas Guibas, Yining Hong), Stanford (June 2026 - Present)</div>
+            <div class="project-description">
+                Co-developed and trained JAM, a 6B-parameter world-action model that couples video and action streams through MM-DiT joint attention and 2D motion tracks; a single checkpoint adapts to single-arm, bimanual, mobile, and humanoid robots. Ran sim-pretrained to real Franka transfer experiments.
+                <div class="highlight">Second author • Under review at ICLR 2027 • <a href="https://anonymous.4open.science/r/anonymous-JAM-B9BF/">Project Page</a></div>
             </div>
         </div>
 
         <div class="project">
             <div class="project-title">TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks</div>
-            <div class="project-meta">Stanford Vision and Learning Lab (Prof. Fei-Fei Li, Prof. Jiajun Wu, Dr. Raven Huang, Yunzhi Zhang), Stanford (June 2025 - June 2026)</div>
+            <div class="project-meta">Stanford Vision and Learning Lab (Prof. Fei-Fei Li, Prof. Jiajun Wu, Dr. Raven Huang, Yunzhi Zhang), Stanford (June 2025 - Present)</div>
             <div class="project-description">
                 Built TrAct, a robot decision framework that uses visual tracks to link a VLA policy, a track-conditioned video diffusion world model, and a VLM reward model. Improved task success from 27% to 55% in simulation and 49% to 76% on a real Franka arm, and demonstrated sim-to-real transfer and cross-embodiment generalization (Franka → UR5).
-                <div class="highlight">Co-first author • In submission • <a href="https://arxiv.org/abs/2608.24101">arXiv</a> • <a href="https://lol-png.github.io/tract/">Project Page</a></div>
+                <div class="highlight">Co-first author • In submission at ICRA 2027 • <a href="https://arxiv.org/abs/2608.24101">arXiv</a> • <a href="https://lol-png.github.io/tract/">Project Page</a></div>
             </div>
         </div>
 
         <div class="project">
-            <div class="project-title">DaVinci Surgical Three-Hand Robot Learning</div>
+            <div class="project-title">DaVinci Surgical Three-Hand Robot-Human Collaboration</div>
             <div class="project-meta">Collaborative Haptics and Robotics in Medicine Lab (Prof. Allison Okamura, Dr. Alaa Eldin Abdelaal), Stanford (June 2025 - December 2025)</div>
             <div class="project-description">
                 Developed a robot action model using Action Chunking Transformers (ACT) for collaborative human-robot manipulation tasks with the DaVinci surgical system. Integrated ACT into real-world collaborative workflows via custom ROS nodes and Isaac Sim for training and evaluation.
@@ -168,6 +177,15 @@
             <div class="project-description">
                 Contributed to data collection for Open-H-Embodiment, the largest open dataset of medical robotic video with synchronized kinematics, spanning 50+ institutions and platforms including the da Vinci and dVRK. The dataset enabled GR00T-H, the first open vision-language-action foundation model for medical robotics, and Cosmos-H-Surgical-Simulator, a multi-embodiment surgical world model.
                 <div class="highlight">Co-author • In submission • <a href="https://arxiv.org/abs/2604.21017">arXiv</a> • <a href="https://open-h.github.io/open-h-embodiment/">Project Page</a></div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Stochastic and Deterministic Models of a Biological Oscillator</div>
+            <div class="project-meta">Read Lab, University of California, Irvine (Prof. Elizabeth Read, Dr. Junhao Gu) (June 2022 - August 2023)</div>
+            <div class="project-description">
+                Compared stochastic and deterministic models of an oscillatory genetic circuit involving repressor proteins. Implemented the model in BioNetGen and investigated comparison techniques including periodograms, heat maps, and peak-finding.
+                <div class="highlight">First author • Published in the PUMP Journal • <a href="https://doi.org/10.46787/pump.v6i0.3566">Paper</a></div>
             </div>
         </div>
 
